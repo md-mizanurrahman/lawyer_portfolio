@@ -26,7 +26,12 @@ img {
 
 header {
   border: var(--border);
-  padding: 0;
+  padding: 20px;
+  background-color: black;
+}
+
+nav {
+  border: 1 ox solid red;
 }
 
 /*# sourceMappingURL=app.css.map */
