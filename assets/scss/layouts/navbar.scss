@@ -1,11 +1,15 @@
 nav {
-border: 1 ox solid red;
+    display: block;
+
     ul {
-
+        margin-bottom: 0;
+        padding: 0;
+border: 1px solid red;
         li {
+            list-style-type: none;
 
-            a{
-
+            a {
+                color: black;
             }
         }
     }
