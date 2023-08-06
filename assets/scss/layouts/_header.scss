@@ -1,5 +1,30 @@
-header{
-    border: var(--border);
-   padding: 20px;
-   background-color:rgb(235, 24, 24);
+header {
+    // border: var(--border);
+
+    .header_body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+padding: 25px 0px;
+        .logo {
+            // border: var(--border);
+            width: 131px;
+        }
+
+        .img {
+            padding-top: 5px;
+        }
+
+        .nav {
+            // border: var(--border);
+        }
+
+        .search {
+            // border: var(--border);
+            a{
+                padding-top: 6px;
+            }
+        }
+    }
 }
