@@ -5,14 +5,25 @@ nav {
         margin-bottom: 0;
         padding: 0;
         display: flex;
-        gap: 30px;
+        gap: 55px;
 
         li {
             list-style-type: none;
 
             a {
-                color: rgb(239, 5, 5);
+                color: var(--black_deep);
+                text-transform: uppercase;
+                font-weight: 400;
+
+                &.active,
+                &:hover {
+                    font-family: var(--poppin_bold);
+                    color: red;
+                    font-weight: 700;
+                }
             }
+
+
         }
     }
 }
