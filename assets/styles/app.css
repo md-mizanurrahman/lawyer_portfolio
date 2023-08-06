@@ -5,6 +5,11 @@
   --black_light:#4F4F4F;
   --black_deep: #2D2F30;
   --white: #fff;
+  --app_font: "poppins-regular"
+  --poppin_regular: "poppins-regular";
+  --poppin_semibold: "poppins-semibold";
+  --poppin_bold: "poppins-bold";
+  --poppin_extabold: "poppins-extabold";
 }
 
 body,
@@ -13,6 +18,7 @@ html {
   padding: 0;
   outline: 0;
   box-sizing: border-box;
+  font-family: var(--app_font);
 }
 
 img,
@@ -25,6 +31,9 @@ span {
 
 a {
   text-decoration: none;
+  font-size: 12px;
+  line-height: 22px;
+  text-decoration: 0.3s;
 }
 
 img {
@@ -87,10 +96,30 @@ h3 {
   line-height: 32px;
 }
 
-header {
-  border: var(--border);
-  padding: 20px;
-  text-align: center;
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+header .header_body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0px;
+}
+header .header_body .logo {
+  width: 131px;
+}
+header .header_body .img {
+  padding-top: 5px;
+}
+header .header_body .search a {
+  padding-top: 6px;
 }
 
 nav {
@@ -100,13 +129,20 @@ nav ul {
   margin-bottom: 0;
   padding: 0;
   display: flex;
-  gap: 30px;
+  gap: 55px;
 }
 nav ul li {
   list-style-type: none;
 }
 nav ul li a {
-  color: rgb(239, 5, 5);
+  color: var(--black_deep);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+nav ul li a.active, nav ul li a:hover {
+  font-family: var(--poppin_bold);
+  color: red;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=app.css.map */
