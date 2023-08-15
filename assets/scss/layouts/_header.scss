@@ -6,7 +6,8 @@ header {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-padding: 25px 0px;
+        padding: 25px 0px;
+
         .logo {
             // border: var(--border);
             width: 131px;
@@ -21,8 +22,9 @@ padding: 25px 0px;
         }
 
         .search {
+
             // border: var(--border);
-            a{
+            a {
                 padding-top: 6px;
             }
         }

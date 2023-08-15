@@ -1,1 +1,0 @@
-{"version":3,"sourceRoot":"","sources":["../scss/vendors/_veriables.scss","../scss/vendors/_reset.scss","../scss/layouts/_header.scss","../scss/layouts/navbar.scss"],"names":[],"mappings":"AAAA;EACI;;;ACDJ;AAAA;EAEI;EACA;EACA;EACA;EACA;;;AAGJ;AAAA;AAAA;AAAA;EAII;;;AAGJ;EACI;EACA;EACA;;;ACnBJ;EACI;EACD;;;ACFH;EACI;;AAEA;EACI;EACA;EACA;;AAEA;EACI;;AAEA;EACI","file":"app.css."}

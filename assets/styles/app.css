@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "poppins-regular";
+  src: url("../fonts/poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "poppins-bold";
+  src: url("../fonts/poppins/Poppins-bold.ttf");
+}
+@font-face {
+  font-family: "poppins-semibold";
+  src: url("../fonts/poppins/Poppins-semibold.ttf");
+}
+@font-face {
+  font-family: "poppins-extrabold";
+  src: url("../fonts/poppins/Poppins-extrabold.ttf");
+}
 :root {
   --border: 1px solid red;
   --brand_light: #0F6E8C;
@@ -101,8 +117,39 @@ h3 {
 }
 
 .container {
-  width: 1200px;
+  width: 1400px;
   margin: auto;
+  border: 1px solid red;
+}
+@media (min-width: 0px) and (max-width: 575.9px) {
+  .container {
+    width: calc(100% - 30px);
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .container {
+    width: 546px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.9px) {
+  .container {
+    width: 738px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.9px) {
+  .container {
+    width: 962px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.9px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
 }
 
 header .header_body {
@@ -138,10 +185,9 @@ nav ul li a {
   color: var(--black_deep);
   text-transform: uppercase;
   font-weight: 400;
+  font-family: var(--poppin_regular);
 }
 nav ul li a.active, nav ul li a:hover {
-  font-family: var(--poppin_bold);
-  color: red;
   font-weight: 700;
 }
 

@@ -14,11 +14,10 @@ nav {
                 color: var(--black_deep);
                 text-transform: uppercase;
                 font-weight: 400;
+                font-family: var(--poppin_regular);
 
                 &.active,
                 &:hover {
-                    font-family: var(--poppin_bold);
-                    color: red;
                     font-weight: 700;
                 }
             }
