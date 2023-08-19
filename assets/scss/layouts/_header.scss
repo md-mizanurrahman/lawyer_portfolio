@@ -11,21 +11,67 @@ header {
         .logo {
             // border: var(--border);
             width: 131px;
+
+            .img {
+                padding-top: 5px;
+            }
         }
 
-        .img {
-            padding-top: 5px;
-        }
+        .right_content {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
 
-        .nav {
-            // border: var(--border);
-        }
+            .nav {
+                // border: var(--border);
+                flex: 1;
+                display: grid;
+                align-items: center;
+            }
 
-        .search {
+            .extra_links {
+                display: flex;
+                gap: 10px;
 
-            // border: var(--border);
-            a {
-                padding-top: 6px;
+                .search {
+                    // border: var(--border);
+
+                    a {
+                        padding-top: 6px;
+                    }
+                }
+
+                .nav_control {
+                    // border: var(--border);
+                    display: grid;
+                    align-items: center;
+                    display: none;
+                    a{
+                        line-height: 10px;
+                    }
+                }
+            }
+
+            @include custom_media(0px, 991.9px) {
+                justify-content: flex-end;
+                .nav {
+                    order: 2;
+                    flex: unset;
+                    ul{
+                        li{
+&.close_nav{
+    display: block;
+}                            
+                        }
+                    }
+                }
+
+                .extra_links {
+                    order: 1;
+                    .nav_control{
+                        display: grid;
+                    }
+                }
             }
         }
     }
