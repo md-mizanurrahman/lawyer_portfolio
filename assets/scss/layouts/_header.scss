@@ -38,6 +38,7 @@ header {
 
                     a {
                         padding-top: 6px;
+                        color: var(--black_deep);
                     }
                 }
 
@@ -46,29 +47,37 @@ header {
                     display: grid;
                     align-items: center;
                     display: none;
-                    a{
+
+                    a {
                         line-height: 10px;
+                        span{
+                            color: var(--black_deep);
+                        }
                     }
                 }
             }
 
             @include custom_media(0px, 991.9px) {
                 justify-content: flex-end;
+
                 .nav {
                     order: 2;
                     flex: unset;
-                    ul{
-                        li{
-&.close_nav{
-    display: block;
-}                            
+
+                    ul {
+                        li {
+                            &.close_nav {
+                                display: block;
+                              
+                            }
                         }
                     }
                 }
 
                 .extra_links {
                     order: 1;
-                    .nav_control{
+
+                    .nav_control {
                         display: grid;
                     }
                 }
