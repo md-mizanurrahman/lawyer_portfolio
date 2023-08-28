@@ -1,0 +1,138 @@
+#banner {
+    .banner_content {
+        display: grid;
+        grid-template-columns: 755px 1fr;
+        padding: 200px 0px 70px;
+
+        @include xs() {
+            grid-template-columns: 1fr;
+            padding: 30px 0px 0px;
+        }
+
+        @include sm() {
+            grid-template-columns: 1fr;
+            padding: 30px 0px 0px;
+        }
+        @include md() {
+            grid-template-columns: 732px 1fr;
+        }
+
+        @include lg() {
+
+        }
+
+        // border: var(--border);
+       
+        .banner_ditails {
+            // border: var(--border);
+
+            .top {
+                h1 {
+                    font-size: 90px;
+                    color: var(--brand_deep);
+                    font-family: 'Playfair Display', serif;
+
+                    @include xs() {
+                        font-size: 33px;
+                        line-height: 48px;
+                    }
+
+                    @include sm() {
+                        font-size: 61px;
+                        line-height: 75px;
+                    }
+                }
+
+                p {
+                    font-family: 'Playfair Display', serif;
+                    font-size: 24px;
+                    line-height: 37px;
+                    color: var(--black_light);
+                    letter-spacing: 0.5px;
+                    max-width: 500px;
+                    margin-top: 40px;
+                }
+
+                a {
+                    padding: 29px 36px;
+                    background-color: var(--brand_deep);
+                    color: var(--white);
+                    font-size: 16px;
+                    border-radius: 8px;
+                    margin-top: 30px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .bottom {
+                P {
+                    color: var(--black_light);
+                    letter-spacing: 0.88px;
+                    font-family: 'Playfair Display sans';
+                    font-size: 22px;
+                    line-height: 30px;
+                    margin-top: 96px;
+                    word-wrap: break-word;
+                }
+
+                .sponsor_list {
+                    // border: var(--border);
+                    display: grid;
+                    grid-template-columns: 105px 105px;
+                    gap: 27px;
+                    margin-top: 30px;
+
+                    a {
+                        img {
+                            width: 100px;
+                            object-fit: contain;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .banner_image {
+            // border: var(--border);
+            position: relative;
+
+            @include sm() {}
+
+            .img {
+                width: 540px;
+                position: absolute;
+                left: -133px;
+                top: -61px;
+
+                @include xs() {
+                    position: unset;
+                    width: 100%;
+                    margin-top: 40px;
+                }
+
+                @include sm() {
+                    position: unset;
+                    width: 100%;
+                    margin-top: 40px;
+                }
+
+                @include md() {
+                    width: 328px;
+                    left: -335px;
+                    top: 253px;
+                }
+
+                @include lg() {
+                    left: -351px;
+                    top: 219px;
+                }
+
+                img {
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+}
