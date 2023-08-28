@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mizan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/fonts/google_icons.css">
     <link rel="stylesheet" href="./assets/styles/app.css">
 
@@ -21,7 +24,7 @@
                     <nav class="nav">
                         <ul id="nav_list">
                             <li class="close_nav">
-                                <a href="#" onclick="event.preventDefault();nav_list.classlist.remove('active');">
+                                <a href="#" onclick="event.preventDefault();nav_list.classList.remove('active');">
                                     <span class="material-symbols-outlined fill">
                                         close
                                     </span>
@@ -43,42 +46,121 @@
                             </a>
                         </div>
                         <div class="nav_control">
-                            <a href="#" onclick="event.preventDefault(); nav_list.classlist.add('active');">
+                            <a href="#" onclick="event.preventDefault(); nav_list.classList.add('active');">
                                 <span class="material-symbols-outlined fill">
                                     format_align_right
                                 </span>
                             </a>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </header>
-    <!-- <div class="container">
-        <div class="banner_part">
-            <div class="banner_text">
-                <h1>Your Solution
-                    Legal Consultacy</h1>
+    <!-- banner_part_started -->
+    <section id="banner">
+        <div class="container">
+            <div class="banner_content">
+                <div class="banner_ditails">
+                    <div class="top">
+                        <h1>
+                            Your Solution Legal Consultacy
+                        </h1>
+                        <p>We are here to help you take care of your legality with the best service especially for you.
+                        </p>
+                        <a href="#" class="contact_button">GET STARTED</a>
+                    </div>
+                    <div class="bottom">
+                        <p>
+                            Trusted by 10+ companies in indonesia
+                        </p>
+                        <div class="sponsor_list">
 
-                <p>We are here to help you take care of your
-                    legality with the best service especially for you.</p>
-
-                <a href="#">
-                    <button>get started</button>
-                </a>
-                <div class="link_part">
-                    <p class="title">Trusted by 10+ companies in indonesia</p>
-                    <div class="link">
-                        <img src="" alt="">
+                            <a href="#">
+                                <img src="./assets/images/Airbnb Logo.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/images/Google Logo.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/images/Microsoft Logo (1).png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/images/Hubspot Logo.png" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
+                <div class="banner_image">
+                    <div class="img">
+                        <img src="./assets/images/banner.pnj.png" alt="">
+                    </div>
 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner_part_end -->
+
+    <!-- service_part_start -->
+    <section id="service">
+        <div class="container">
+            <div class="services_part">
+                <div class="service_ditails">
+                    <h2>
+                        Why do we help with legalization?
+                    </h2>
+                    <p>
+                        We are here for UMKM in Indonesia to carry out the legalization process, which is sometimes
+                        complicated.
+                    </p>
+                </div>
+                <div class="service_list">
+                    <div class="service_card_top">
+                        <div class="service_card">
+                            <div class="img">
+                                <img src="./assets/images/Circle Layer.svg" alt="">
+                            </div>
+                            <h4>Enviromental Law</h4>
+                            <p>Environmental legal issues might occur since
+                                the planned business activities are designed</p>
+                        </div>
+                        <div class="service_card">
+                            <div class="img">
+                                <img src="./assets/images/Circle Layer.svg" alt="">
+                            </div>
+                            <h4>Enviromental Law</h4>
+                            <p>Environmental legal issues might occur since
+                                the planned business activities are designed</p>
+                        </div>
+                    </div>
+                    <div class="service_card_bottom">
+                        <div class="service_card">
+                            <div class="img">
+                                <img src="./assets/images/Circle Layer.svg" alt="">
+                            </div>
+
+                            <h4>Enviromental Law</h4>
+                            <p>Environmental legal issues might occur since
+                                the planned business activities are designed</p>
+                        </div>
+                        <div class="service_card">
+                            <div class="img">
+                                <img src="./assets/images/Circle Layer.svg" alt="">
+                            </div>
+                            <h4>Enviromental Law</h4>
+                            <p>Environmental legal issues might occur since
+                                the planned business activities are designed</p>
+                        </div>
+                    </div>
+
+
+                </div>
 
             </div>
         </div>
-    </div> -->
+
+    </section>
 </body>
 
 </html>
