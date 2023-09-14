@@ -1,0 +1,122 @@
+#our_features {
+    background-color: #F2FCFF;
+    // border: var(--border);
+    padding: 120px 0px;
+}
+
+.our_features_body {
+    display: grid;
+    grid-template-columns: 417px 1fr;
+    gap: 100px;
+    // border: var(--border);
+
+    @include xs() {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    @include sm() {
+        grid-template-columns: 1fr;
+        gap: 65px;
+    }
+
+    @include md() {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    @include lg() {
+        gap: 40px;
+        grid-template-columns: 376px 1fr;
+    }
+
+    .features_description {
+        padding-top: 48px;
+
+        h2 {
+            color: #2D2F30;
+            font-family: var(--play_fair);
+            font-size: 48px;
+            line-height: 58px;
+            letter-spacing: 0.320px;
+            @include xs() {
+                font-size: 28px;
+                line-height: 38px;
+             }
+        }
+
+        p {
+            color: var(--gray);
+            font-family: var(--poppin_regular);
+            font-size: 20px;
+            line-height: 40px;
+            font-style: normal;
+            letter-spacing: 0.5px;
+            margin-top: 30px;
+            @include xs() {
+               font-size: 14px;
+               line-height: 24px;
+            }
+        }
+    }
+
+    .featuree_list {
+        display: grid;
+        grid-template-columns: 256px 256px;
+        gap: 30px;
+
+        @include xs() {
+            grid-template-columns: 1fr;
+        }
+        @include sm() {
+            grid-template-columns: 1fr;
+        }
+
+        @include md() {
+            justify-content: center;
+            grid-template-columns: 257px 255px;
+        }
+
+        @include lg() {
+            gap: 23px;
+        }
+
+        // border: var(--border);
+        .featuree_item {
+            padding: 24px;
+            width: 256px;
+            background: #FCFCFC;
+            border-radius: 8px;
+            box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
+
+            @include xs() {
+                width: 100%;
+            }
+            @include sm() {
+                width: 100%;
+            }
+
+            .icon {
+                .img {
+                    width: 37px;
+                }
+            }
+
+            h3 {
+                font-size: 22px;
+                line-height: 22px;
+                font-family: var(----play_fair);
+                color: #363940;
+                letter-spacing: 0.5px;
+                margin-top: 18px;
+            }
+
+            p {
+                font-family: var(----play_fair);
+                font-size: 14px;
+                line-height: 24px;
+                color: var(--gray);
+                margin-top: 10px;
+            }
+        }
+    }
+}
