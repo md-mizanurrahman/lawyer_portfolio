@@ -169,18 +169,18 @@
 
                 @include sm() {
                     position: unset;
-                    width: 100%;
+                    width: 70%;
                 }
 
                 @include md() {
                     width: 334px;
-                    left: -317px;
-                    top: 200px;
+                    left: -329px;
+                    top: 203px;
                 }
 
                 @include lg() {
                     left: -295px;
-                    top: 187px;
+                    top: 189px;
                     width: 355px;
                 }
 
@@ -194,6 +194,10 @@
                     @include sm() {
                         width: 100%;
                         margin-bottom: -7px;
+                    }
+                    @include lg() {
+                        width: 100%;
+                        
                     }
 
                 }
