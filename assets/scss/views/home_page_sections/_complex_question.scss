@@ -1,0 +1,79 @@
+#Complex_Questions {
+    @include custom_media(0px, 767.9px) {
+        padding-bottom: 45px;
+    }
+
+    .Complex_Questions_content {
+        display: grid;
+        grid-template-columns: 1fr 395px;
+        gap: 30px;
+
+        @include xs() {
+            grid-template-columns: 1fr;
+        }
+
+        @include sm() {
+            grid-template-columns: 1fr;
+        }
+
+        @include md() {
+            grid-template-columns: 1fr;
+        }
+
+        .left {
+            .common_heading {
+                &.left {
+                    padding: 45px 0px;
+
+                    p {
+                        margin-top: 15px;
+                    }
+                }
+
+            }
+
+            .action_btns {
+                .action_btn {
+                    display: inline-flex;
+                    gap: 10px;
+                    background: var(--brand_light);
+                    border-radius: 8px;
+                    padding: 14px 18px;
+                    color: var(--white);
+                    align-items: center;
+
+                    .icon {
+                        position: relative;
+                        top: 3px;
+                        font-size: 22px;
+                    }
+
+                    .text {
+                        font-size: 22px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        .right {
+            .images {
+                .img {
+                    height: 100%;
+                    overflow-x: hidden;
+                    border-bottom-left-radius: 40px;
+                    height: 395px;
+
+                    img {
+                        max-width: unset;
+
+                        @include xs() {
+                            max-width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
