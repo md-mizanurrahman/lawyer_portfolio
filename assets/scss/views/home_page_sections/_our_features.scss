@@ -31,7 +31,11 @@
 
     .features_description {
         padding-top: 48px;
-
+        .common_heading{
+            &.center{
+                margin-top: 30px;
+            }
+        }
     }
 
     .featuree_list {

@@ -1,9 +1,15 @@
 .common_heading {
-    margin-top: 36px;
-
     &.center {
         text-align: center;
+        p {
+            margin-top: 30px;
+        }
     }
+
+    &.right {
+        text-align: center;
+    }
+
 
     h2 {
         color: #2D2F30;
@@ -12,15 +18,7 @@
         line-height: 58px;
         letter-spacing: 0.320px;
 
-        @include xs() {
-            font-size: 28px;
-            line-height: 38px;
-        }
 
-        @include sm() {
-            font-size: 28px;
-            line-height: 38px;
-        }
     }
 
     p {
@@ -30,22 +28,6 @@
         line-height: 40px;
         font-style: normal;
         letter-spacing: 0.5px;
-        margin-top: 30px;
 
     }
-
-    @include xs() {
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    @include sm() {
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-        
-         
-        
-
 }
