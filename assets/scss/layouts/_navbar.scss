@@ -28,10 +28,15 @@ nav {
                 text-transform: uppercase;
                 font-weight: 400;
                 font-family: var(--poppin_regular);
+                
 
                 &.active,
                 &:hover {
                     font-weight: 700;
+                    background-color: var(--brand_deep);
+                    color: var(--white);
+                    border-radius: 4px;
+                    padding: 5px 10px;
                 }
             }
         }
