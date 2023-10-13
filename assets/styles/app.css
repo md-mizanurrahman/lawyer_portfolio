@@ -879,6 +879,9 @@ nav ul li a.active, nav ul li a:hover {
 #Complex_Questions .Complex_Questions_content .left .common_heading.left p {
   margin-top: 15px;
 }
+#Complex_Questions .Complex_Questions_content .left .action_btns {
+  margin-bottom: 20px;
+}
 #Complex_Questions .Complex_Questions_content .left .action_btns .action_btn {
   display: inline-flex;
   gap: 10px;
@@ -897,10 +900,16 @@ nav ul li a.active, nav ul li a:hover {
   font-size: 22px;
   font-weight: 600;
 }
-#Complex_Questions .Complex_Questions_content .right .images .img {
+#Complex_Questions .Complex_Questions_content .right .img {
   height: 100%;
-  overflow: hidden;
-  border-top-right-radius: 8px;
+  overflow-x: hidden;
+}
+#Complex_Questions .Complex_Questions_content .right .img img {
+  height: 404px;
+  border-bottom-left-radius: 40px;
+  margin-top: -8px;
+  position: relative;
+  top: 8px;
 }
 
 /*# sourceMappingURL=app.css.map */
