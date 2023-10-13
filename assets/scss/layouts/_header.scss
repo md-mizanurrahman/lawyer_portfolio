@@ -50,8 +50,16 @@ header {
 
                     a {
                         line-height: 10px;
-                        span{
+
+                        span {
                             color: var(--black_deep);
+                        }
+
+                        &:hover {
+                            background-color: var(--brand_deep);
+                            color: var(--white);
+                            border-radius: 4px;
+                            padding: 5px 10px;
                         }
                     }
                 }
@@ -68,7 +76,7 @@ header {
                         li {
                             &.close_nav {
                                 display: block;
-                              
+
                             }
                         }
                     }
