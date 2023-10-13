@@ -1,0 +1,93 @@
+#top_footer {
+    background-color: var(--brand_light);
+
+    .top_footer_content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 85px 0px;
+
+        .logo {
+            width: 300px;
+            // border: var(--border);
+
+            .images {
+                img {}
+            }
+        }
+
+        .footer_link {
+            // border: var(--border);
+            width: 200px;
+
+            .link_list_heading {
+                color: var(--white);
+                font-size: 20px;
+                margin-bottom: 30px;
+                font-weight: 400;
+                text-transform: capitalize;
+                font-family: var(--play_fair);
+            }
+
+            .link_list {
+                li {
+
+                    a {
+                        color: var(--white);
+                        margin-bottom: 12px;
+                        font-weight: 400;
+                        text-transform: capitalize;
+                        padding: 6px;
+                        display: block;
+
+                        &:hover {
+                            background-color: var(--black_deep);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#bottom_footer {
+    background-color: var(--brand_deep);
+
+    .bottom_footer_content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 22px 0px;
+
+        .left {
+            p {
+                color: var(--white);
+            }
+        }
+
+        .right {
+
+            .social_links {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px;
+
+                li {
+                    a {
+                        i {
+                            color: var(--white);
+                            display: inline-block;
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 50%;
+                            text-align: center;
+                            line-height: 25px;
+                            background-color: var(--brand_light);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
