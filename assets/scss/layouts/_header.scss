@@ -24,7 +24,7 @@ header {
 
             .nav {
                 // border: var(--border);
-                flex: 1;
+                flex: 1; 
                 display: grid;
                 align-items: center;
             }
@@ -63,8 +63,8 @@ header {
                         }
                     }
                 }
-            }
 
+            }
             @include custom_media(0px, 991.9px) {
                 justify-content: flex-end;
 
